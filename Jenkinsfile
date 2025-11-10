@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'python:3.11'
+            image 'python:trixie'
             args "-v ${env.WORKSPACE}:/app -w /app"
         }
     }
